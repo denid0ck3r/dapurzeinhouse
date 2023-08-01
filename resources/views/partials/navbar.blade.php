@@ -22,6 +22,9 @@
         <li class="nav-item">
           <a class="nav-link" {{ ($title === "Category") ? 'active' : ''}}" href="/category">Category</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" {{ ($title === "Category") ? 'active' : ''}}" href="#">GITHUBTest</a>
+        </li>
       </ul>
     </div>
   </div>
