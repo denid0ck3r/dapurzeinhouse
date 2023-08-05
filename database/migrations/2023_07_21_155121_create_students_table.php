@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('students', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->foreignId('category_id');
             $table->string('nip')->unique();
             $table->string('major');
             $table->string('slug')->unique();

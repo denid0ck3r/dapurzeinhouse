@@ -37,3 +37,4 @@ Route::get('/posts/{post:slug}', [PostController::class, 'show']);
 Route::get('/student', [StudentController::class, 'index']);
 Route::get('/studentinfo/{student:slug}', [StudentController::class, 'show']);
 Route::get('/category', [CategoryController::class, 'index']);
+Route::get('/categoryinfo/{category:slug}', [CategoryController::class, 'show']);

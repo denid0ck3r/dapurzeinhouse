@@ -19,7 +19,7 @@
         <td>{{$data->name}}</td>
         <td>{{$data->nip}}</td>
         <td>{{$data->major}}</td>
-        <td>{{$data->title}}</td>
+        <td><a href="studentinfo/{{$data->slug}}" class="text-decoration-none">Show Posts</a></td>
       </tr>
       
     </tbody>

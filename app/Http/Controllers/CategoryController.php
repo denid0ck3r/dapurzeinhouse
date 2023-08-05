@@ -18,7 +18,7 @@ class CategoryController extends Controller
         return view('category', [
             "title" => "Category",
             "halaman" => "Category",
-            "categories" => \App\Models\Category::all()
+            "category" => \App\Models\Category::all()
         ]);
     }
 
@@ -43,7 +43,12 @@ class CategoryController extends Controller
      */
     public function show(Category $category)
     {
-        //
+            return view('categoryinfo', [
+                "title" => "Categories",
+                "category" => $category,
+                "posts" => $category->posts,
+                "halaman" => $category->category
+        ]);
     }
 
     /**

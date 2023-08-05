@@ -46,7 +46,8 @@ class StudentController extends Controller
         return view('studentinfo',
         [
                 "title" => "Student",
-                "halaman" => "Detail Student",
+                "halaman" => "Detail Student",                
+                "posts" => $student->posts,
                 "student" => $student
                 
         ]);

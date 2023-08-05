@@ -8,10 +8,10 @@
 
 
    <h2>Judul Post: {{$post->title}}</h2>
-   <h3>Category Article: <a href="studentinfo/{{$post->student->slug}}" class="text-decoration-none">{{$post->category->category}}</a></h3>
+   <h3>Category Article: <a href="categoryinfo/{{$post->category->slug}}" class="text-decoration-none">{{$post->category->category}}</a></h3>
    <h3>By: <a href="studentinfo/{{$post->student->slug}}" class="text-decoration-none">{{$post->student->name}}</a></h3>
    <p>Excerpt: {{$post->excerpt}}</p>
-   <a href="/posts/{{$post->slug}}">Read more..</a>
+   <a href="/posts/{{$post->slug}}"" class="text-decoration-none">Read more..</a>
    
 </article>
 @endforeach

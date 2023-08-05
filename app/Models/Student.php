@@ -11,9 +11,14 @@ class Student extends Model
 
     protected $guarded = ['id'];
 
-    public function post()
+    public function posts()
     {
-        return $this->hasMany(\App\Models\Post::class);
+        return $this->hasMany(Post::class);
+    }
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
     }
     
 }
