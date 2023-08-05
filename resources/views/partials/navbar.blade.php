@@ -23,7 +23,7 @@
           <a class="nav-link" {{ ($title === "Category") ? 'active' : ''}}" href="/category">Category</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" {{ ($title === "Category") ? 'active' : ''}}" href="#">GITHUBTest</a>
+          <a class="nav-link" {{ ($title === "User") ? 'active' : ''}}" href="/user">Users</a>
         </li>
       </ul>
     </div>

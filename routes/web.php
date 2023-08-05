@@ -14,6 +14,7 @@ Use App\Models\About;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +33,7 @@ Route::get('/', function () {
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/about', [AboutController::class, 'index']);
+Route::get('/user', [UserController::class, 'index']);
 Route::get('/posts', [PostController::class, 'index']);
 Route::get('/posts/{post:slug}', [PostController::class, 'show']);
 Route::get('/student', [StudentController::class, 'index']);
